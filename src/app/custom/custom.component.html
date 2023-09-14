@@ -5,22 +5,17 @@
         <h4>LOGO</h4>
       </div>
       <div class="col-6 nav-block__links">
-        <a class="p-2">link1</a>
-        <a class="p-2">link2</a>
-        <a class="p-2">link3</a>
-        <a class="p-2">link4</a>
+        <a class="p-2" *ngFor="let item of [1, 2, 3, 4]">link{{ item }}</a>
       </div>
     </div>
     <div class="row intro-block">
-      <div class="col-6 intro-block__body">
+      <div class="col-5 intro-block__body">
         <div class="intro-block__content">
           <h1 class="intro-block__title">Intro</h1>
           <p class="intro-block__text">Some introduction lines about the website or company</p>
         </div>
       </div>
-      <div class="col-6 intro-block__img">
-        <!-- <img src="../img/" alt="" /> -->
-      </div>
+      <div class="col-7 intro-block__img"></div>
     </div>
   </div>
 </div>
@@ -39,10 +34,7 @@
   <div class="container">
     <div class="row footer-block">
       <div class="col-6 footer-block__links">
-        <a class="p-2">link1</a>
-        <a class="p-2">link2</a>
-        <a class="p-2">link3</a>
-        <a class="p-2">link4</a>
+        <a class="p-2" *ngFor="let item of [1, 2, 3, 4]">link{{ item }}</a>
       </div>
       <div class="col-6 footer-block__text">
         <p>info</p>
